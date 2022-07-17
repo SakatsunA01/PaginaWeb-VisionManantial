@@ -1,0 +1,103 @@
+@import "./base/colores";
+
+.fondo3{
+    background-image: url(../img/fondo3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    box-shadow: 0px 20px 13px -7px #000000;
+}
+.page_formulario {
+    margin: 500px 15vw 40px 15vw;
+    display: grid;
+    grid-template-columns: 50vh 80vh;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10vw;
+    grid-row-gap: 0px;
+    }
+    
+.formulario-col1 { grid-area: 1 / 1 / 2 / 2; }
+
+.formulario-col2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: nth($color2 ,3 );
+    text-align: center;
+    padding: 4em 2em 0 2em;
+    border-radius: 10px;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    h3{
+        font-size: 2.5rem;
+    }
+    img{
+        width: 60vh;
+        border-radius: 10px;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.formulario_titulo{
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+.formulario{
+    background-color: nth($color2 ,3 );
+    width: 50vh;
+    padding: 4em 2em;
+    border-radius: 10px;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    text-align: center;
+}
+.formulario_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em
+}
+.formulario_grupo{
+    position: relative;
+}
+.formulario_input{
+    width: 100%;
+    background: none;
+    color: nth($color3,3 );
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid nth($color3,3 );
+}
+.formulario_label{
+    font-size: 1.5rem;
+    color: nth($color3,3 );
+    cursor: pointer;
+}
+.formulario_text{
+    width: 100%;
+    height: 10vh;
+    background: none;
+    color: nth($color3,3 );
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid nth($color3,3 );
+}
+.formulario_submit{
+    margin-top: 20px;
+    background-color: nth($color4,2 );
+    color: nth($color ,4 );
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    width: 100%;
+}
+@media screen and (max-width: 770px){
+    .page_formulario{
+        display: flex;
+        flex-direction: column;
+    }
+}
+

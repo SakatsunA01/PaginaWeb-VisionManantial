@@ -1,0 +1,28 @@
+@import "./components/header";
+@import "./index";
+@import "./base/colores";
+@import "./podcast.scss";
+@import "./components/footer";
+@import "./contacto";
+@import "./reproductor";
+
+body{
+    background-color: nth($color4 ,1 );
+    margin: 0;
+    padding: 0;
+    color: nth($color, 4);
+}
+
+// *::-webkit-scrollbar-track{
+// 	background-color: nth($color , 3 );
+// }
+
+// *::-webkit-scrollbar{
+// 	width: 12px;
+// 	background-color: #F5F5F5;
+// }
+
+// *::-webkit-scrollbar-thumb{
+// 	background-color: #000000;
+// }
+
