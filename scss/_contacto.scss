@@ -8,7 +8,7 @@
     box-shadow: 0px 20px 13px -7px #000000;
 }
 .page_formulario {
-    margin: 500px 15vw 40px 15vw;
+    margin: 20px 15vw 40px 15vw;
     display: grid;
     grid-template-columns: 50vh 80vh;
     grid-template-rows: 1fr;
@@ -31,6 +31,7 @@
     img{
         width: 60vh;
         border-radius: 10px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     }
     p{
         font-size: 1.5rem;
@@ -56,9 +57,10 @@
 }
 .formulario_grupo{
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .formulario_input{
-    width: 100%;
+    width: 90%;
     background: none;
     color: nth($color3,3 );
     font-size: 1rem;
@@ -73,7 +75,7 @@
     cursor: pointer;
 }
 .formulario_text{
-    width: 100%;
+    width: 90%;
     height: 10vh;
     background: none;
     color: nth($color3,3 );
@@ -93,11 +95,45 @@
     border: none;
     border-radius: .5em;
     width: 100%;
+    box-shadow: 
+    rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    &:hover{
+        background-color: nth($color4, 4);
+    }
 }
 @media screen and (max-width: 770px){
     .page_formulario{
         display: flex;
         flex-direction: column;
+        margin: 20px 5vw 40px 5vw;
+    }
+    .formulario{
+        width: 48vh;
+        padding: 1em 0.5em;
+    }
+    .formulario_input{
+        width: 80%;
+        font-size: 0.5rem;
+    }
+    .formulario_text{
+        width: 80%;
+        height: 10vh;
+    }
+    .formulario-col2 {
+        margin-top: 30px;
+        background-color: nth($color2 ,3 );
+        padding: 2em 1em 0 1em;
+        h3{
+            font-size: 3.5rem;
+        }
+        img{
+            width: 45vh;
+        }
+        p{
+            font-size: 1.5rem;
+        }
     }
 }
 

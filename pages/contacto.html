@@ -33,37 +33,41 @@
             <h1>Dejanos tu consulta</h1>
         </section>
         <section class="page_formulario">
-            <form action="form.php" class="formulario formulario-col1">
+
+
+            <form class="formulario formulario-col1" id="form_consultas">
                 <div class="formulario_titulo">
                     <h2>formulario</h2>
                 </div>
                 <div class="formulario_container">
                     <div class="formulario_grupo">
                         <label for="nombre" class="formulario_label">Nombre:</label>
-                        <input type="text" class="formulario_input">
+                        <input type="text" class="formulario_input" id="input_nombre">
                         <span class="formulario_line"></span>
                     </div>
                     <div class="formulario_grupo">
                         <label for="email" class="formulario_label">Email:</label>
-                        <input type="text" class="formulario_input">
+                        <input type="text" class="formulario_input" id="input_email">
                         <span class="formulario_line"></span>
                     </div>
                     <div class="formulario_grupo">
                         <label for="textarea" class="formulario_label">consulta aqui:</label>
-                        <textarea name="consulta" id="consulta" class="formulario_text"></textarea>
+                        <textarea name="consulta" class="formulario_text" id="text_consulta"></textarea>
                         <span class="formulario_line"></span>
                     </div>    
                 </div>
                 <div>
-                    <input type="submit" class="formulario_submit" value="enviar">
+                    <input type="submit" class="formulario_submit" id="form_btn_enviar">
                 </div>
             </form>
+
+
             <div class="formulario-col2">
                 <div>
-                    <h3>no estas solo</h3>
+                    <h3>"mensaje"</h3>
                 </div>
                 <div>
-                    <img src="../img/gente-igle.jpg" alt="">
+                    <img src="../img/formulario.jpg" alt="">
                 </div>
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus amet, architecto a exercitationem nostrum sunt, velit assumenda nisi ab repellat reiciendis voluptates placeat omnis praesentium quos ipsa alias quod?
@@ -77,5 +81,7 @@
             <p>Manantial De Vendiciones</p>
         </section>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/formulario.js"></script>
 </body>
 </html>
